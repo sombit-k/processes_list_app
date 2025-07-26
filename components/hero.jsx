@@ -12,7 +12,7 @@ const Hero = () => {
         <div className="h-50 md:h-100 w-1/2 md:pt-20">
         <TypewriterEffectSmoothDemo/>
         </div>
-        <div className=" md:h-100 w-full md:w-1/2 py-10 mx-10">
+        <div className=" md:h-100 w-full md:w-1/2 py-10 mx-20 ">
           <ThreeDHeroImage />
         </div>
     </div>

@@ -1,21 +1,22 @@
 import React from 'react'
-
+import Hero from '@/components/hero'
+import { CarouselDemo } from '@/components/carousel'
+import { AnimatedTestimonialsDemo } from '@/components/testimonials'
 const LandingPage = () => {
   return (
     <>
-    {/* Hero Section */}
+      <div className="min-h-screen bg-white">
+        {/* Hero Section */}
+        <Hero />
 
-    {/* carousel1 */}
+        {/* carousel */}
+        <CarouselDemo />
 
+        {/* Testimonials */}
+        <AnimatedTestimonialsDemo/>
+        {/* Buttons */}
 
-    {/* carousel2 */}
-
-
-    {/* Testimonials */}
-
-    {/* Buttons */}
-
-    
+      </div>
     </>
   )
 }

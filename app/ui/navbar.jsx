@@ -10,7 +10,7 @@ import {
     MobileNavToggle,
     MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
     SignInButton,
     SignUpButton,
@@ -22,16 +22,12 @@ import {
 export function NavbarDemo() {
     const navItems = [
         {
-            name: "Features",
-            link: "#features",
+            name: "Dashboard",
+            link: "dashboard",
         },
         {
-            name: "Pricing",
-            link: "#pricing",
-        },
-        {
-            name: "Contact",
-            link: "#contact",
+            name: "Listings",
+            link: "listings",
         },
     ];
 

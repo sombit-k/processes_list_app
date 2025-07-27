@@ -156,7 +156,7 @@ export default function Carousel({
 
   return (
     (<div
-      className="relative w-[70vmin] h-[70vmin] mx-auto"
+      className="relative w-[70vmin] h-[70vmin] mx-auto z-10 "
       aria-labelledby={`carousel-heading-${id}`}>
       <ul
         className="absolute flex mx-[-4vmin] transition-transform duration-1000 ease-in-out"

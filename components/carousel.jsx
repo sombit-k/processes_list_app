@@ -1,6 +1,7 @@
 "use client";
 import Autoplay from "embla-carousel-autoplay"
 import Carousel from "@/components/ui/carousel";
+import { Meteors } from "@/components/ui/meteors";
 export function CarouselDemo() {
   const slideData = [
     {
@@ -25,13 +26,14 @@ export function CarouselDemo() {
     },
   ];
   return (
-    <div className="relative overflow-hidden w-full h-full py-20">
+    <div className="relative overflow-hidden w-full h-full py-20 bg-black">
       <Carousel
       plugins={[
         Autoplay({
           delay: 1000,
         }),
       ]} slides={slideData} />
+      <Meteors number={50} />
     </div>
   );
 }

@@ -17,6 +17,10 @@ export const Meteors = ({
         const meteorCount = number || 20;
         // Calculate position to spread meteors across full width using percentage
         const position = (idx / meteorCount) * 100; // Spread across 0-100% of container width
+        
+        // Use deterministic values based on index instead of Math.random()
+        const delay = (idx * 0.5) % 5; // Deterministic delay between 0-5s
+        const duration = 5 + (idx % 5); // Deterministic duration between 5-9s
 
         return (
           (<span
@@ -27,10 +31,10 @@ export const Meteors = ({
               className
             )}
             style={{
-              top: "-40px", // Start above the container
-              left: position + "%", // Use percentage instead of pixels
-              animationDelay: Math.random() * 5 + "s", // Random delay between 0-5s
-              animationDuration: Math.floor(Math.random() * (10 - 5) + 5) + "s", // Keep some randomness in duration
+              top: "-40px",
+              left: position + "%",
+              animationDelay: delay + "s",
+              animationDuration: duration + "s",
             }}></span>)
         );
       })}

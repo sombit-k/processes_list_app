@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <html lang="en">
       
 
-      <body className={`${inter.className} antialiased bg-black`}>
+      <body className={`${inter.className} antialiased  `}>
         {/* Header */}
         
         <NavbarDemo />
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         {/* Main Content */}
 
           {/* implement toaster */}
-        <main className="min-h-screen bg-black"> 
+        <main className="min-h-screen   "> 
           {children}
         </main>
 

@@ -1,4 +1,3 @@
-"use server"
 import React from 'react'
 import Hero from '@/components/hero'
 import { CarouselDemo } from '@/components/carousel'

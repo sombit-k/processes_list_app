@@ -5,13 +5,13 @@ import { auth } from "@clerk/nextjs/server";
 import { db } from "@/lib/prisma";
 export async function fetchListingsByUserId() {
 
-    const {userId} = await auth();
-    console.log("User ID:", userId);
+    const { userId } = await auth();
+    // console.log("User ID:", userId);
     if (!userId) throw new Error("Unauthorized");
 
-  const user = await db.user.findUnique({
-    where: { clerkUserId: userId },
-  });
+    const user = await db.user.findUnique({
+        where: { clerkUserId: userId },
+    });
 
     try {
         const listings = await db.list.findMany({

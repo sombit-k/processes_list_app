@@ -8,8 +8,7 @@ const UserDashboard = async () => {
   console.log("response data", response.data);
   return (
     <>
-    
-      <SidebarDemo />
+      <SidebarDemo data={response.data} />
     </>
   )
 }
